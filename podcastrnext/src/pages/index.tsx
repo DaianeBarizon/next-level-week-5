@@ -22,7 +22,7 @@ type Episode = {
 }
 
 type HomeProps = {
-  latestEpisodes: Episode[]; /* Array<Episode> */
+  latestEpisodes: Episode[]; // Array<Episode> 
   allEpisodes: Episode[];
 }
 
@@ -143,6 +143,6 @@ export  const getStaticProps: GetStaticProps = async () => {
       latestEpisodes,
       allEpisodes,
     },
-    revalidate: 60 * 60 * 8,
+    revalidate: 60 * 60 * 8, // 8 hours
   }
 }
